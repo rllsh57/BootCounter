@@ -1,6 +1,7 @@
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
+    alias(libs.plugins.kotlinxSerialization)
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsCompose)
@@ -28,6 +29,9 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
+            implementation(libs.koin.android)
+            implementation(libs.kotlinx.serialization.json)
+            implementation(libs.kotlinx.datetime)
         }
     }
 }

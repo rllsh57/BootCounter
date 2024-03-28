@@ -13,7 +13,10 @@ androidx-test-junit = "1.1.5"
 compose = "1.6.2"
 compose-plugin = "1.6.0"
 junit = "4.13.2"
+koin = "3.5.0"
 kotlin = "1.9.22"
+kotlinx-json = "1.6.3"
+kotlinx-datetime = "0.6.0-RC.2"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -28,9 +31,13 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-json" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
