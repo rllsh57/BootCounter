@@ -1,6 +1,5 @@
 package com.github.rllsh57.boot.counter
 
-import App
 import android.Manifest.permission.POST_NOTIFICATIONS
 import android.content.pm.PackageManager.PERMISSION_GRANTED
 import android.os.Bundle
