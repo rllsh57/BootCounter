@@ -1,11 +1,10 @@
-This is a Kotlin Multiplatform project targeting Android.
+Not done:
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+- Boot receiver don't work
+- Notification scheduling
+- Receiver/Service should update boot count
+- UI is not reactive (currently should restart app to see updates)
+- Dismissal logic
+- Storage in activity is not good (no time for doing MVI/MVVM)
 
-
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+I tried my best to make something in that time :)
